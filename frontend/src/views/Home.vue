@@ -1,7 +1,4 @@
 <template>
-  <HelloWorld />
+  <h1>BIM BIM BAM BAM</h1>
 </template>
 
-<script lang="ts" setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
-</script>
