@@ -2,10 +2,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
+import MyCourses from "@/views/MyCourses.vue";
+
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
+    redirect: '/home',
     children: [
       {
         path: '/home',
@@ -23,6 +25,11 @@ const routes = [
           hideNavbar: true,
         }
       },
+      {
+        path: '/mycourses',
+        name: 'MyCourses',
+        component: MyCourses,
+      }
     ],
   },
 ]

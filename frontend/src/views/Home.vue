@@ -25,14 +25,17 @@ export default defineComponent({
         { id: 1, title: 'Title 1', description: 'Description 1' },
         { id: 2, title: 'Title 2', description: 'Description 2' },
         { id: 3, title: 'Title 3', description: 'Description 3' },
-        { id: 4, title: 'Title 4', description: 'Description 4' }
+        { id: 4, title: 'Title 4', description: 'Description 4' },
+        { id: 5, title: 'Title 5', description: 'Description 5' },
+        { id: 6, title: 'Title 6', description: 'Description 6' },
+        { id: 7, title: 'Title 7', description: 'Description 7' }
       ]
     }
   }
 })
 </script>
 
-<style>
+<style scoped>
 
 .container {
   position: absolute;
@@ -48,9 +51,9 @@ export default defineComponent({
 }
 
 .courses {
-  
+  padding: 20px;
   width: 100%;
-  background-color: gray;
+  background-color: rgb(212, 212, 212);
   border: solid 1px black;
 }
 
@@ -59,6 +62,7 @@ export default defineComponent({
   flex-wrap: nowrap;
   
   overflow-x: auto;
+  overflow-y: hidden;
   height: 250px; /* Set a fixed height */
 }
 

@@ -25,10 +25,10 @@
 
 <style scoped>
 .card {
-    width: 700px;
+    min-width: 300px;
     height: 200px;
     border: 1px solid black;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     display: inline-block;
     background-color: white;

@@ -1,7 +1,9 @@
 <template>
     <div class="navbar">
-        <router-link to="/home" id="button">Home</router-link>
-        <router-link to="/mycourses" id="button">My Courses</router-link>
+        <div class="buttons">
+            <router-link to="/home" id="button">Home</router-link>
+            <router-link to="/mycourses" id="button">My Courses</router-link>
+        </div>
         <div class="profile">
             <img class="profile-pic">
             <router-link to="/profile" id="button">John</router-link>
@@ -9,7 +11,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 
 .navbar {
     height: 60px;
@@ -55,5 +57,12 @@
     color: black;
     text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  .profile {
+    padding: 0;
+  }
+}
+
 
 </style>
