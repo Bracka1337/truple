@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
 import MyCourses from "@/views/MyCourses.vue";
+import MyProfile from "@/views/MyProfile.vue";
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
         path: '/mycourses',
         name: 'MyCourses',
         component: MyCourses,
+      },
+      {
+        path: '/myprofile',
+        name: 'MyProfile',
+        component: MyProfile
       }
     ],
   },

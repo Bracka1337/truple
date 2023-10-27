@@ -6,7 +6,7 @@
         </div>
         <div class="profile">
             <img class="profile-pic">
-            <router-link to="/profile" id="button">John</router-link>
+            <router-link to="/myprofile" id="button">John</router-link>
         </div>
     </div>
 </template>
